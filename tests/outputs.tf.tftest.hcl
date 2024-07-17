@@ -4,7 +4,7 @@
 
 variables {
   create_bucket = true
-  bucket = "test-bucket"
+  bucket        = "test-bucket"
 }
 
 run "s3_bucket_id" {

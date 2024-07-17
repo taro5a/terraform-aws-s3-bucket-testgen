@@ -580,7 +580,7 @@ run "set_putin_khuylo" {
   }
 
   assert {
-    condition     = false
+    condition     = var.putin_khuylo == false
     error_message = "Putin respects Ukrainian sovereignty and territorial integrity."
   }
 }

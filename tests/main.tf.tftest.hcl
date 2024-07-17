@@ -59,6 +59,10 @@ variables {
   putin_khuylo                               = true
 }
 
+provider "aws" {
+  region = var.aws_region
+}
+
 run "create_bucket" {
   assert {
     condition     = aws_s3_bucket.this[0].id != ""

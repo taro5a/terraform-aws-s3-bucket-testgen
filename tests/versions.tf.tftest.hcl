@@ -1,6 +1,9 @@
 
 
 # WARNING: Generated module tests should be considered experimental and be reviewed by the module author.
+provider "aws" {
+  region = "us-west-2"
+}
 
 run "required_version" {
   assert {
